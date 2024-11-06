@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="ejercicio">
+            <h3>¡Bienvenido/a <span id="ej1_nombre">(nombre)</span> <span id="ej1_apellido">(apellido)</span>, con fecha de cumpleaños <span id="ej1_cumpleaños">(dd/mm/aaaa)</span>, a nuestra página!</h3>
+        </div>
+        
+        <div class="ejercicio">
+            <h3>Introduzca sus datos: </h3>
+            
+            <div class="formulario">
+                <input id="form_nombre" type="text" placeholder="Nombre..." value=""/>
+                <input id="form_apellido" type="text" placeholder="Apellido..." value=""/>
+                <div class="form_cumple">
+                    <label>Cumpleaños</label>
+                    <div class="cumple_select">
+                        <select id="fechas_dias"><option>--</option></select>
+                        <select id="fechas_meses"><option id="primer_mes">--</option></select>
+                        <select id="fechas_años"><option id="primer_año">----</option></select>
+                        <h id="ej2_cumpleaños"></h>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ejercicio">
+            <h3>Usted ha vivido <h id="dias_transcurridos">0</h> días desde su nacimiento</h3>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
